@@ -1,4 +1,4 @@
-const Contact = require("./models/Contact");
+const Contact = require("./models/contact");
 
 exports.getAll = async (req, res) => {
   const contacts = await Contact.find().sort({ createdAt: -1 });
